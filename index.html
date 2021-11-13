@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-eidth, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <title>Simple Library App</title>
+</head>
+<body>
+
+  <section class="container">
+    <div class="wrapper-container-1">
+      <div class="box-form">
+        <h3>Tambah Buku</h3>
+        <div class="form-group">
+          <label for="judul">Judul</label>
+          <input type="text" class="input input-group" id="judul" placeholder="masukkan judul buku ..." autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="pencipta">Nama Pencipta</label>
+          <input type="text" class="input input-group" id="pencipta" placeholder="masukkan nama pencipta ..." autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="halaman">Jumlah Halaman</label>
+          <input type="number" class="input input-group" id="halaman" placeholder="masukkan jumlah halaman ..." autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select id="status" class="input input-group">
+            <option value="ada">ada</option>
+            <option value="tidak ada">tidak ada</option>
+          </select>
+        </div>
+        <button class="button button-green button-form">
+          <i class="fas fa-fw fa-plus"></i>
+          <span>Tambah Buku</span>
+        </button>
+      </div>
+    </div>
+    <div class="wrapper-container-2">
+      <div class="box-wrapper">
+        <button class="button button-red delete-library">
+          <i class="fas fa-fw fa-trash-alt"></i>
+          <span>Hapus Library</span>
+        </button>
+        <input type="text" class="input search-input" placeholder="masukkan judul buku ..." autocomplete="off">
+      </div>
+      <div class="table-container">
+        <table class="table" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Judul Buku</th>
+              <th>Nama Pencipta</th>
+              <th>Halaman</th>
+              <th>Status</th>
+              <th>Opsi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- content -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --poppins: 'Poppins';
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d9d9d939;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.container {
+  position: relative;
+  margin: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .wrapper-container-1 {
+  width: 30%;
+}
+.container .box-form {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 40px 30px;
+}
+.container .box-form h3 {
+  font-family: var(--poppins);
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: silver;
+}
+.container .box-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.container .box-form .form-group .input-group {
+  background-color: #f2f2f2;
+  margin: 7px 0;
+}
+.container .box-form .button-form {
+  width: 100%;
+  margin-top: 10px;
+}
+.container .wrapper-container-2 {
+  width: 68%;
+}
+.container .box-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container .table-container {
+  position: relative;
+  overflow-x: scroll;
+}
+.container .table-container .table {
+  position: relative;
+  width: 100%;
+}
+.container .table-container .table thead tr th,
+.container .table-container .table tbody tr td {
+  padding: 15px;
+  text-align: center;
+}
+.container .table-container .table thead tr,
+.container .table-container .table tbody tr {
+  transition: 0.5s;
+}
+.container .table-container .table thead tr th {
+  background-color: royalblue;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.container .table-container .table tbody tr td {
+  background-color: #fff;
+}
+.container .table-container .table tbody tr .row-opsi i {
+  color: red;
+  cursor: pointer;
+}
+.button {
+  position: relative;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button-blue,
+.button-red,
+.button-green {
+  transition: 0.5s;
+  color: #fff;
+}
+.button-red,
+.badges-red {
+  background-color: #fc0a0a97;
+}
+.button-green,
+.badges-green {
+  background-color: #4caf50;
+}
+.button-blue {
+  background-color: royalblue;
+}
+.container .input {
+  position: relative;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.container .search-input {
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+.badges {
+  position: relative;
+  padding: 8px 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.badges-green,
+.badges-red {
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container .wrapper-container-1,
+  .container .wrapper-container-2 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .container .wrapper-container-1 {
+    margin-bottom: 30px;
+  }
+  .container .box-wrapper {
+    flex-direction: column;
+  }
+  .container .box-wrapper .button {
+    margin-bottom: 10px;
+  }
+  .container .box-wrapper .search-input {
+    width: 100%;
+  }
+}

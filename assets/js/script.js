@@ -82,7 +82,9 @@ function tambahBuku(judul, pencipta, halaman, status) {
   row_opsi.appendChild(icon_opsi);
   
   // fitur hapus item
-  icon_opsi.addEventListener('click', () => tr.remove());
+  icon_opsi.addEventListener('click', () => {
+    if(confirm('Yakin ingin menghapus data ini?')) tr.remove();
+  });
   
   tr.appendChild(row_judul);
   tr.appendChild(row_pencipta);
@@ -98,7 +100,9 @@ function tambahBuku(judul, pencipta, halaman, status) {
 
 function hapusLibrary() {
   const button = document.querySelector('.container .delete-library');
-  button.addEventListener('click', () => table_body.innerHTML = '');
+  button.addEventListener('click', () => {
+    if(confirm('Yakin ingin menghapus semua data?')) table_body.innerHTML = '';
+  });
 }
 
 hapusLibrary();
